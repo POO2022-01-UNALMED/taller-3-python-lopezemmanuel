@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Test constructores",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest testConstructores.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test metodos",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest testMetodos.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test uso self",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest testSelf.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
