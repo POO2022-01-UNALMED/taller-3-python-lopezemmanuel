@@ -43,10 +43,16 @@ class TV:
         self._precio = precio
 
     def setVolumen(self, volumen):
-        self._volumen = volumen
+        if self._estado  and volumen >= 0 and volumen <= 7:
+            self._volumen = volumen
 
     def setCanal(self, canal):
-        self._canal = canal
+        if self._estado and canal >= 1 and canal <= 120:
+            self._canal = canal
+
+    @classmethod
+    def setNumTV(cls, numTV):
+        TV._numTV = numTV
     
     # ----- OTROS -----
     def turnOn(self):
